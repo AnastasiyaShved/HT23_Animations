@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AnimationsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HT23_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AnimationsVC" customModule="HT23_Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,8 +21,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7L-27-KvS">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Core Animations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUC-Oa-1yg">
-                                                <rect key="frame" x="87" y="58" width="216" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUC-Oa-1yg">
+                                                <rect key="frame" x="96.5" y="60.5" width="171" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -45,12 +45,18 @@
                                         <color key="tintColor" red="0.19971734835031091" green="0.41075240454146189" blue="0.64652182840716543" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Core Animations"/>
+                                        <connections>
+                                            <action selector="coreAnimBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-2b-xRj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEn-zI-udy">
                                         <rect key="frame" x="0.0" y="56" width="214" height="31"/>
                                         <color key="tintColor" red="0.19971734839999999" green="0.4107524045" blue="0.64652182840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Lottie Animations"/>
+                                        <connections>
+                                            <action selector="lottieAnimBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFL-ac-Qyu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -66,6 +72,13 @@
                             <constraint firstItem="O80-rB-Kr6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="rDx-fB-ct3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coreAnimationsBtn" destination="2mb-tb-BjC" id="Vx2-sf-rSJ"/>
+                        <outlet property="coreAnimationsLbl" destination="FUC-Oa-1yg" id="uui-Q5-MXb"/>
+                        <outlet property="coreAnimationsView" destination="J7L-27-KvS" id="o1h-gf-4MO"/>
+                        <outlet property="lottienimationsBtn" destination="nEn-zI-udy" id="xla-qd-uMu"/>
+                        <outlet property="stackView" destination="O80-rB-Kr6" id="TCw-yh-0yu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
