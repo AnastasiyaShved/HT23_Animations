@@ -56,15 +56,55 @@
 		FAA409B22ACEE9920051F205 /* HT23_Animations */ = {
 			isa = PBXGroup;
 			children = (
-				FAA409B32ACEE9920051F205 /* AppDelegate.swift */,
-				FAA409B52ACEE9920051F205 /* SceneDelegate.swift */,
-				FAA409B72ACEE9920051F205 /* ViewController.swift */,
-				FAA409B92ACEE9920051F205 /* Main.storyboard */,
-				FAA409BC2ACEE9940051F205 /* Assets.xcassets */,
-				FAA409BE2ACEE9940051F205 /* LaunchScreen.storyboard */,
+				FAA409C72ACEE9D20051F205 /* APP */,
+				FAA409C82ACEE9DF0051F205 /* Controllers */,
+				FAA409C92ACEE9F90051F205 /* Views */,
+				FAA409CA2ACEEA000051F205 /* Assets */,
 				FAA409C12ACEE9940051F205 /* Info.plist */,
 			);
 			path = HT23_Animations;
+			sourceTree = "<group>";
+		};
+		FAA409C72ACEE9D20051F205 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				FAA409B32ACEE9920051F205 /* AppDelegate.swift */,
+				FAA409B52ACEE9920051F205 /* SceneDelegate.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		FAA409C82ACEE9DF0051F205 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA409B72ACEE9920051F205 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA409C92ACEE9F90051F205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAA409B92ACEE9920051F205 /* Main.storyboard */,
+				FAA409BE2ACEE9940051F205 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAA409CA2ACEEA000051F205 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FAA409CB2ACEEA0B0051F205 /* Animations */,
+				FAA409BC2ACEE9940051F205 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FAA409CB2ACEEA0B0051F205 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
