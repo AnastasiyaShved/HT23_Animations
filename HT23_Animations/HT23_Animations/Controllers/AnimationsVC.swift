@@ -4,8 +4,9 @@
 //
 //  Created by Apple on 5.10.23.
 //
-
+import Lottie
 import UIKit
+
 
 class AnimationsVC: UIViewController {
     // MARK: - property
@@ -16,10 +17,14 @@ class AnimationsVC: UIViewController {
     @IBOutlet weak var lottienimationsBtn: UIButton!
     @IBOutlet weak var coreAnimationsBtn: UIButton!
     
+    //создаем новую view
+    var lottieAnimationsView: AnimationView!
+    
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCoreAnimationView()
+        lottieAnimationViewSetup()
         
     }
     
@@ -29,8 +34,7 @@ class AnimationsVC: UIViewController {
         sender.pulsate()
     }
     
-    @IBAction func lottieAnimBtn(_ sender: UIButton) {
-    }
+    @IBAction func lottieAnimBtn(_ sender: UIButton) { }
     
     // MARK: - private func
     //вызываем анимацию у салого объекта UIView
@@ -40,6 +44,11 @@ class AnimationsVC: UIViewController {
                        options: [.autoreverse, .repeat]) { [weak self] in
             self?.coreAnimationsView.frame.origin.x+=30
         }
+    }
+    
+    override func lottieAnimationViewSetup() {
+//        lottieAnimationsView = .init(name: <#T##String#>)
+         
     }
  
     
